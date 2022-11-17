@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d236430-c411-43fe-8069-49a066e4a4f9" name="Changes" comment="Route handlers">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/style.css" afterDir="false" />
+    <list default="true" id="2d236430-c411-43fe-8069-49a066e4a4f9" name="Changes" comment="Handler for CSS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/newTask.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/newTask.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/taskInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/taskInfo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tasks.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668698256206</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Handler for CSS">
+      <created>1668700103302</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668700103302</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,6 +94,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Basic html files created" />
     <MESSAGE value="Route handlers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Route handlers" />
+    <MESSAGE value="Handler for CSS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Handler for CSS" />
   </component>
 </project>
