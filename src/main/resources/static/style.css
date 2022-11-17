@@ -1,0 +1,9 @@
+
+
+h1, h2, h3, table {font-family: Arial}
+label {font-family:Arial;
+    padding: 10px;}
+
+th {
+    border-style: solid;
+}
