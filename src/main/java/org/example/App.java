@@ -1,13 +1,27 @@
 package org.example;
 
+import io.javalin.Javalin;
+
 /**
- * Hello world!
+ * Timestretch
  *
  */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        var app = Javalin.create().start(7070);
+
+        app.get("/", ctx -> {
+            ctx.render("tasks.html");
+        });
+
+        app.get("/taskinfo", ctx -> {
+            ctx.render("taskInfo.html");
+        });
+
+        app.get("/newtask", ctx -> {
+            ctx.render("newTask.html");
+        });
     }
 }
