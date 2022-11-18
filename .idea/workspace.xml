@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d236430-c411-43fe-8069-49a066e4a4f9" name="Changes" comment="Handler for CSS">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tasks.html" afterDir="false" />
-    </list>
+    <list default="true" id="2d236430-c411-43fe-8069-49a066e4a4f9" name="Changes" comment="Advanced CSS Zweiter Versuch" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +34,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -70,12 +68,12 @@
       <option name="project" value="LOCAL" />
       <updated>1668698256206</updated>
     </task>
-    <task id="LOCAL-00003" summary="Handler for CSS">
-      <created>1668700103302</created>
+    <task id="LOCAL-00003" summary="Advanced CSS Zweiter Versuch">
+      <created>1668701921131</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1668700103302</updated>
+      <updated>1668701921131</updated>
     </task>
     <option name="localTasksCounter" value="4" />
     <servers />
@@ -94,7 +92,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Basic html files created" />
     <MESSAGE value="Route handlers" />
-    <MESSAGE value="Handler for CSS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Handler for CSS" />
+    <MESSAGE value="Advanced CSS Zweiter Versuch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Advanced CSS Zweiter Versuch" />
   </component>
 </project>
