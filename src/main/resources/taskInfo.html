@@ -8,8 +8,8 @@
 <main>
     <h1><a href="tasks.html" th:href="@{/}">Timestretch</a></h1>
     <article>
-        <h2>Task1</h2>
-            <p>
+        <h2 th:text="${task.Titel}">Task1</h2>
+            <p th:text="${task.Beschreibung}">
                 Lorem ipsum dolor sit amet,
                 consetetur sadipscing elitr.
             </p>
@@ -18,26 +18,26 @@
             <h3>Gesamt: 7h</h3>
             <table>
                 <tr>
-                    <th>
+                    <td>
                         <time>24.10.2022</time>
-                    </th>
-                    <th>
-                        <p><time>12:15</time> - <time>13:15</time></p>
-                    </th>
-                    <th>
+                    </td>
+                    <td>
+                        <p><time th:text="${time.Timestamp_start}">12:15</time> - <time th:text="${time.Timestamp_end}">13:15</time></p>
+                    </td>
+                    <td>
                         <p>1h</p>
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td>
                         <p>25.10.2022</p>
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         <p><time>12:15</time> - <time>18:15</time></p>
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         <p>6h</p>
-                    </th>
+                    </td>
                 </tr>
             </table>
         </section>

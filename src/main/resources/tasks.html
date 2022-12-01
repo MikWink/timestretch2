@@ -14,7 +14,7 @@
   <table>
     <tr>
       <td th:each="t : ${Task}">
-        <a href="taskInfo.html" th:href="@{/taskinfo}">
+        <a href="taskInfo.html" th:href="@{/taskinfo/{id}(id=${t.Task_ID})}">
         <h3 th:text="${t.Titel}">Task 1</h3>
         <p  th:text="${t.Beschreibung}">Lorem ipsum dolor sit amet,<br> consetetur sadipscing elitr.</p>
         </a>

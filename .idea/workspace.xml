@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d236430-c411-43fe-8069-49a066e4a4f9" name="Changes" comment="Advanced CSS Zweiter Versuch">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Task.java" afterDir="false" />
+    <list default="true" id="2d236430-c411-43fe-8069-49a066e4a4f9" name="Changes" comment="Tasks werden Dynamisch geladen">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Time.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/newTask.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/newTask.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/taskInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/taskInfo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tasks.html" afterDir="false" />
     </list>
@@ -96,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668778671508</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Tasks werden Dynamisch geladen">
+      <created>1669907970594</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669907970594</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +121,7 @@
     <MESSAGE value="Basic html files created" />
     <MESSAGE value="Route handlers" />
     <MESSAGE value="Advanced CSS Zweiter Versuch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Advanced CSS Zweiter Versuch" />
+    <MESSAGE value="Tasks werden Dynamisch geladen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tasks werden Dynamisch geladen" />
   </component>
 </project>
