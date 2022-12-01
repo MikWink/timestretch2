@@ -12,7 +12,7 @@ h1 {
     background-color: #5094CC;
 }
 
-th {
+td {
     padding: 1%;
     margin: 1%;
     border-style: none;
@@ -20,7 +20,7 @@ th {
     background-image: linear-gradient(180deg, #5094CC, #FFFFFF);
 }
 
-th a {
+td a {
     background-color: #FFFFFF;
     color: #000;
     text-align: left;

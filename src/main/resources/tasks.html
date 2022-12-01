@@ -13,37 +13,37 @@
   <h2>Tasks</h2>
   <table>
     <tr>
-      <th>
+      <td th:each="t : ${Task}">
         <a href="taskInfo.html" th:href="@{/taskinfo}">
-        <h3>Task 1</h3>
-        <p>Lorem ipsum dolor sit amet,<br> consetetur sadipscing elitr.</p>
+        <h3 th:text="${t.Titel}">Task 1</h3>
+        <p  th:text="${t.Beschreibung}">Lorem ipsum dolor sit amet,<br> consetetur sadipscing elitr.</p>
         </a>
-      </th>
-      <th>
+      </td>
+      <td>
         <h3>Task 2</h3>
         <p>Lorem ipsum dolor sit amet, <br>consetetur sadipscing elitr.</p>
-      </th>
-      <th>
+      </td>
+      <td>
         <h3>Task 2</h3>
         <p>Lorem ipsum dolor sit amet, <br>consetetur sadipscing elitr.</p>
-      </th>
+      </td>
     </tr>
     <tr>
-      <th>
+      <td>
         <h3>Task 4</h3>
         <p>Lorem ipsum dolor sit amet,<br> consetetur sadipscing elitr.</p>
-      </th>
-      <th>
+      </td>
+      <td>
         <h3>Task 5</h3>
         <p>Lorem ipsum dolor sit amet, <br>consetetur sadipscing elitr.</p>
-      </th>
-      <th>
+      </td>
+      <td>
         <h3>Task 6</h3>
         <p>Lorem ipsum dolor sit amet, <br>consetetur sadipscing elitr.</p>
-      </th>
+      </td>
     </tr>
     <tr>
-      <a href="newTask.html">
+      <a href="newTask.html" th:href="@{/newtask}">
         <h3>New Task</h3>
       </a>
     </tr>
