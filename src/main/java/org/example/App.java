@@ -24,8 +24,10 @@ public class App
             Connection con = DriverManager.getConnection("jdbc:postgresql://pgdb.wannaco.de:4711/","g1", "k&eiQ_duwfyaPl");
             Statement stmt = con.createStatement();
             ResultSet res = stmt.executeQuery("SELECT * FROM timestretch.time WHERE Task_ID =" + id);
-            res.next();
-            Time time = new Time(res.getInt("Task_ID"), res.getTimestamp("Timestamp_start"), res.getTimestamp("Timestamp_end"));
+            List<Time>times = new ArrayList<>();
+            while (res.next()) {
+                times.add(new Time(res.getInt(1), res.getTimestamp(2), res.getTimestamp(3)));
+            }
             res = stmt.executeQuery("SELECT * FROM timestretch.task WHERE Task_ID =" + id );
             res.next();
             Task task = new Task(res.getInt(1), res.getString("Titel"), res.getString("Beschreibung"));
@@ -33,7 +35,7 @@ public class App
             stmt.close();
             con.close();
 
-            ctx.render("taskInfo.html", Map.of("time", time, "task", task));
+            ctx.render("taskInfo.html", Map.of("time", times, "task", task));
         });
 
         app.get("/taskinfo/2", ctx -> {

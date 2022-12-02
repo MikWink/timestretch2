@@ -1,16 +1,17 @@
 package org.example;
 
-import java.sql.Timestamp;
+
+import java.util.Date;
 
 public class Time {
 
     private int Task_ID;
 
-   private Timestamp Timestamp_start;
+   private Date Timestamp_start;
 
-    private Timestamp Timestamp_end;
+    private Date Timestamp_end;
 
-    public Time(int Task_ID, Timestamp Timestamp_start, Timestamp Timestamp_end) {
+    public Time(int Task_ID, Date Timestamp_start, Date Timestamp_end) {
         this.Task_ID = Task_ID;
         this.Timestamp_start = Timestamp_start;
         this.Timestamp_end = Timestamp_end;
@@ -20,11 +21,11 @@ public class Time {
         return Task_ID;
     }
 
-    public Timestamp getTimestamp_start() {
+    public Date getTimestamp_start() {
         return Timestamp_start;
     }
 
-    public Timestamp getTimestamp_end() {
+    public Date getTimestamp_end() {
         return Timestamp_end;
     }
 }

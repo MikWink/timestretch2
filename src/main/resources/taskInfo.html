@@ -17,26 +17,15 @@
             <h3>Zeitprotokoll</h3>
             <h3>Gesamt: 7h</h3>
             <table>
-                <tr>
+                <tr th:each="ti : ${time}">
                     <td>
-                        <time>24.10.2022</time>
+                        <time th:text="${ti.Timestamp_start.getDate()} + '.' + ${ti.Timestamp_start.getMonth()} + '.' + (${ti.Timestamp_start.getYear()}+1900)">24.10.2022</time>
                     </td>
                     <td>
-                        <p><time th:text="${time.Timestamp_start}">12:15</time> - <time th:text="${time.Timestamp_end}">13:15</time></p>
+                        <p><time th:text="|${ti.Timestamp_start.getHours()}:${ti.Timestamp_start.getMinutes}:${ti.Timestamp_start.getSeconds()}|">12:15</time> - <time th:text="|${ti.Timestamp_end.getHours()}:${ti.Timestamp_end.getMinutes}:${ti.Timestamp_end.getSeconds()}|">13:15</time></p>
                     </td>
                     <td>
-                        <p>1h</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>25.10.2022</p>
-                    </td>
-                    <td>
-                        <p><time>12:15</time> - <time>18:15</time></p>
-                    </td>
-                    <td>
-                        <p>6h</p>
+                        <p th:test="(${ti.Timestamp_end.getTime()}-${ti.Timestamp_start.getTime()})">1h</p>
                     </td>
                 </tr>
             </table>

@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d236430-c411-43fe-8069-49a066e4a4f9" name="Changes" comment="Tasks werden Dynamisch geladen">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Time.java" afterDir="false" />
+    <list default="true" id="2d236430-c411-43fe-8069-49a066e4a4f9" name="Changes" comment="Detailansicht funktioniert für jede Task dynamisch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Time.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/taskInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/taskInfo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tasks.html" afterDir="false" />
     </list>
@@ -100,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669907970594</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Detailansicht funktioniert für jede Task dynamisch">
+      <created>1669912756035</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669912756035</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +129,7 @@
     <MESSAGE value="Route handlers" />
     <MESSAGE value="Advanced CSS Zweiter Versuch" />
     <MESSAGE value="Tasks werden Dynamisch geladen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tasks werden Dynamisch geladen" />
+    <MESSAGE value="Detailansicht funktioniert für jede Task dynamisch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Detailansicht funktioniert für jede Task dynamisch" />
   </component>
 </project>
