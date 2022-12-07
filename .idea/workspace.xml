@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d236430-c411-43fe-8069-49a066e4a4f9" name="Changes" comment="Detailansicht funktioniert für jede Task dynamisch">
+    <list default="true" id="2d236430-c411-43fe-8069-49a066e4a4f9" name="Changes" comment="Timestamps working better, cleaned up the placeholder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Time.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/taskInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/taskInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/tasks.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669912756035</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Timestamps working better, cleaned up the placeholder">
+      <created>1670008275529</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670008275529</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +133,7 @@
     <MESSAGE value="Advanced CSS Zweiter Versuch" />
     <MESSAGE value="Tasks werden Dynamisch geladen" />
     <MESSAGE value="Detailansicht funktioniert für jede Task dynamisch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Detailansicht funktioniert für jede Task dynamisch" />
+    <MESSAGE value="Timestamps working better, cleaned up the placeholder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Timestamps working better, cleaned up the placeholder" />
   </component>
 </project>
