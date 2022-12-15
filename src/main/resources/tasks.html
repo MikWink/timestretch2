@@ -7,7 +7,14 @@
   <link rel="stylesheet" href="static/style.css" th:href="@{style.css}"/>
 </head>
 <body>
-<h1>Timestretch</h1>
+<div class="header">
+  <button id="createNewTask">
+    <img src="window-plus.svg">
+    New Task
+  </button>
+  <h1>Timestretch</h1>
+</div>
+
 <main>
 
   <h2>Tasks</h2>
@@ -19,14 +26,14 @@
         <h3 th:text="${t.Titel}">Task 1</h3>
         <p  th:text="${t.Beschreibung}">Lorem ipsum dolor sit amet,<br> consetetur sadipscing elitr.</p>
         </a>
+        <div class="task-icons">
+          <img src="play-circle-fill.svg">
+          <img src="trash-fill.svg">
+          <img src="check-circle-fill.svg">
+        </div>
       </td>
     </tr>
   </table>
 </main>
-
-
-
-
-
 </body>
 </html>
