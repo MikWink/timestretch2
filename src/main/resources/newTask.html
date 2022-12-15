@@ -12,15 +12,15 @@
 <body>
   <h1><a href="tasks.html" th:href="@{/}">Timestretch</a></h1>
   <h2>New Task:</h2>
-  <form id="newTask">
+  <form th:action="@{/createTask}" id="newTask" method="post">
     <label>
       Titel:
-      <input type="text" >
+      <input name="titel" type="text" >
     </label>
     <br>
     <label>
       Beschreibung:
-      <input type="text">
+      <input name="beschreibung" type="text">
     </label>
     <br>
     <label>

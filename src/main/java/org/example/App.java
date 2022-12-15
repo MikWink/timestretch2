@@ -14,6 +14,8 @@ public class App
 {
     public static void main( String[] args )
     {
+        int idCounter = 0;
+
         Javalin app = Javalin.create().start(7070);
 
         app._conf.addStaticFiles("/static", Location.CLASSPATH);
@@ -41,6 +43,26 @@ public class App
         app.get("/taskinfo/2", ctx -> {
 
             ctx.render("taskInfo.html");
+        });
+
+        app.post("/createTask", ctx -> {
+            String titel = ctx.formParam("titel");
+            String beschreibung = ctx.formParam("beschreibung");
+            Connection con = DriverManager.getConnection("jdbc:postgresql://pgdb.wannaco.de:4711/","g1", "k&eiQ_duwfyaPl");
+            Statement stmt = con.createStatement();
+            ResultSet res = stmt.executeQuery("SELECT nextval('idCounter')");
+            res.next();
+            int counter = (res.getInt(1))+4;
+            stmt.execute("INSERT INTO timestretch.task VALUES ("+ counter + ", '" + titel + "', '"+ beschreibung + "');");
+            res = stmt.executeQuery("select * from timestretch.task");
+            List<Task>tasks = new ArrayList<>();
+            while (res.next()) {
+                tasks.add(new Task(res.getInt(1), res.getString("Titel"), res.getString("Beschreibung")));
+            }
+            res.close();
+            stmt.close();
+            con.close();
+            ctx.render("tasks.html", Map.of("Task", tasks));
         });
 
         app.get("/newtask", ctx -> {
