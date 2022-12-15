@@ -1,20 +1,56 @@
 
 body {
     background-color: #F1F1F1;
-}
-h1, h2, h3, table {font-family: Arial}
-label {font-family:Arial;
-    padding: 10px;}
-
-h1 {
     margin: 0;
-    paddig: 1%;
+    padding: 0;
+}
+
+h1, h2, h3, table {
+    font-family: Arial
+}
+
+label {
+    font-family:Arial;
+    padding: 20%;
+}
+
+.header {
+    border-width: 0;
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0%;
     background-color: #5094CC;
 }
 
-td {
+.header h1 {
+    margin: 0;
     padding: 1%;
-    margin: 1%;
+    text-align: center;
+}
+
+#createNewTask{
+    margin: 1% 0 0 2%;
+    padding: 0.5%;
+    width: 8%;
+    border-style: none;
+    border-radius: 20px;
+    background-color: #eeeeee;
+    float: left;
+}
+
+#createNewTask img {
+    float: left;
+    padding: 0 1%;
+}
+
+table {
+    padding: 2%;
+}
+
+td {
+    padding: 2%;
+    margin: 5%;
+    width: 20%;
     border-style: none;
     border-radius: 20px;
     background-image: linear-gradient(180deg, #5094CC, #FFFFFF);
@@ -26,3 +62,18 @@ td a {
     text-align: left;
     text-decoration: none;
 }
+
+.task-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1% 0 1%;
+    margin: 0;
+}
+
+.task-icons img {
+    padding: 0;
+    margin: 0;
+    width: 10%;
+    height: auto;
+}
+
