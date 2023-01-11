@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>timestretch</title>
+    <meta charset="UTF-8">
+    <title>timestretch</title>
 
-  <link rel="stylesheet" href="static/style.css" th:href="@{style.css}"/>
+    <link rel="stylesheet" href="static/style.css" th:href="@{style.css}"/>
 </head>
 <body>
 <div class="header">
-  <button id="createNewTask">
-    <img src="window-plus.svg">
-    New Task
-  </button>
-  <h1>Timestretch</h1>
+    <a href="newTask.html">
+    <button id="createNewTask" type="button" >
+        <img src="window-plus.svg">
+        New Task
+    </button>
+    </a>
+    <h1>Timestretch</h1>
 </div>
 
 <main>
 
-  <h2>Tasks</h2>
-  <table>
-    <tr>
-      <td th:each="t : ${Task}">
-        <a href="taskInfo.html" th:href="@{/taskinfo/{id}(id=${t.Task_ID})}">
-        <h3 th:text="${t.Titel}">Task 1</h3>
-        <p  th:text="${t.Beschreibung}">Lorem ipsum dolor sit amet,<br> consetetur sadipscing elitr.</p>
-        </a>
-        <div class="task-icons">
-          <img src="play-circle-fill.svg">
-          <img src="trash-fill.svg">
-          <img src="check-circle-fill.svg">
+    <h2 id="tasksHeading">Tasks</h2>
+
+    <div id="divOfAllTasks">
+        <div id="oneTask" th:each="t : ${Task}" href="taskInfo.html" >
+            <a th:href="@{/taskinfo/{id}(id=${t.Task_ID})}">
+            <h3 th:text="${t.Titel}">Task 1</h3>
+            <p th:text="${t.Beschreibung}">Lorem ipsum dolor sit amet,<br> consetetur sadipscing elitr.</p>
+            </a>
+            <div id="divForPositioningIcons">
+                <div class="task-icons">
+                    <img src="play-circle-fill.svg">
+                    <img src="trash-fill.svg">
+                    <img src="check-circle-fill.svg">
+                </div>
+            </div>
         </div>
-      </td>
-    </tr>
-  </table>
+    </div>
+
+
+    <!--
+    <table>
+      <tr>
+        <td th:each="t : ${Task}">
+          <a href="taskInfo.html" th:href="@{/taskinfo/{id}(id=${t.Task_ID})}">
+          <h3 th:text="${t.Titel}">Task 1</h3>
+          <p  th:text="${t.Beschreibung}">Lorem ipsum dolor sit amet,<br> consetetur sadipscing elitr.</p>
+          </a>
+          <div class="task-icons">
+            <img src="play-circle-fill.svg">
+            <img src="trash-fill.svg">
+            <img src="check-circle-fill.svg">
+          </div>
+        </td>
+      </tr>
+    </table>
+    -->
 </main>
 </body>
 </html>

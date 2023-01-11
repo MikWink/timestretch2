@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>New Task</title>
-  <style>
-    h1, h2, h3, table {font-family: Arial}
-        label {font-family:Arial;
-               padding: 10px;}
-  </style>
+    <link rel="stylesheet" href="static/style.css" th:href="@{style.css}"/>
 </head>
 <body>
-  <h1><a href="tasks.html" th:href="@{/}">Timestretch</a></h1>
-  <h2>New Task:</h2>
-  <form id="newTask">
-    <label>
-      Titel:
-      <input type="text" >
-    </label>
-    <br>
-    <label>
-      Beschreibung:
-      <input type="text">
-    </label>
-    <br>
-    <label>
-      <input type="submit">
-    </label>
-  </form>
 
+<div class="header">
+    <a href="tasks.html" th:href="@{/}">
+        <button id="backToTasksButton" type="button">
+            <img src="static/arrow-bar-left.svg">
+        </button>
+    </a>
+    <h1>Timestretch</h1>
+</div>
+
+<div id="newTaskPage">
+    <h2>New Task:</h2>
+    <form id="newTaskForm">
+        <label id="labelTitle">
+            Title
+
+            <input id="inputTitle" type="text" placeholder="Example task">
+        </label>
+        <br>
+        <label id="labelDescription">
+            Description
+        </label>
+            <textarea id="inputDescription" placeholder="Lorem ipsum dolor sit amet, consectetur... " rows="10" cols="30"></textarea>
+        <br>
+        <label id="labelSubmit">
+            <input id="inputSubmit" type="submit">
+        </label>
+    </form>
+</div>
 
 </body>
 </html>

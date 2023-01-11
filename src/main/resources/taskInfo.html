@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Task Info</title>
+    <link rel="stylesheet" href="static/style.css" th:href="@{style.css}"/>
 </head>
 <body>
 <main>
-    <h1><a href="tasks.html" th:href="@{/}">Timestretch</a></h1>
+    <div class="header">
+        <a href="tasks.html" th:href="@{/}">
+        <button id="backToTasksButton" type="button">
+            <img src="static/arrow-bar-left.svg">
+        </button>
+        </a>
+        <h1>Timestretch</h1>
+    </div>
+
+    <!--h1><a href="tasks.html" th:href="@{/}">Timestretch</a></h1-->
     <article>
+
         <h2 th:text="${task.Titel}">Task1</h2>
             <p th:text="${task.Beschreibung}">
                 Lorem ipsum dolor sit amet,
                 consetetur sadipscing elitr.
             </p>
         <section>
-            <h3>Zeitprotokoll</h3>
             <h3>Gesamt: 7h</h3>
-            <table>
+
+            <table id="timetrackingTable">
+                <tr>
+                    <th>Date</th>
+                    <th>from to</th>
+                    <th>sum</th>
+                </tr>
                 <tr th:each="ti : ${time}">
                     <td>
                         <time th:text="${ti.Timestamp_start.getDate()} + '.' + ${ti.Timestamp_start.getMonth()} + '.' + (${ti.Timestamp_start.getYear()}+1900)">24.10.2022</time>

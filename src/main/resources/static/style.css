@@ -9,6 +9,11 @@ h1, h2, h3, table {
     font-family: Arial
 }
 
+#tasksHeading {
+    visibility: hidden;
+    margin-left: 2%;
+}
+
 label {
     font-family:Arial;
     padding: 20%;
@@ -43,24 +48,65 @@ label {
     padding: 0 1%;
 }
 
-table {
-    padding: 2%;
+#backToTasksButton {
+    margin: 1% 0 0 2%;
+    padding: 0.5%;
+    width: 8%;
+    border-style: none;
+    border-radius: 20px;
+    background-color: #eeeeee;
+    float: left;
 }
 
-td {
+article {
+    width: 90%;
+    padding: 5%;
+}
+
+article p {
+    height: 200px;
+}
+
+#timetrackingTable {
+    width: 100%;
+    text-align: left;
+}
+
+#oneTask {
+    float: left;
+    align-content: center;
     padding: 2%;
-    margin: 5%;
-    width: 20%;
+    margin: 1%;
+    width: 350px;
+    height: 175px;
     border-style: none;
     border-radius: 20px;
     background-image: linear-gradient(180deg, #5094CC, #FFFFFF);
+    position: relative;
 }
 
-td a {
+#oneTask h3 {
+    margin-top: 0;
+}
+
+#oneTask p {
+    height: 100px;
+}
+
+#oneTask a {
     background-color: #FFFFFF;
     color: #000;
     text-align: left;
     text-decoration: none;
+}
+
+#divOfAllTasks {
+    xxxdisplay: flex;
+    xxxjustify-content: space-between;
+}
+
+#divForPositioningIcons {
+    gggposition: absolute;
 }
 
 .task-icons {
@@ -77,3 +123,15 @@ td a {
     height: auto;
 }
 
+#newTaskPage {
+    padding: 5%;
+}
+
+#newTaskForm input {
+
+
+}
+
+#inputDescription {
+
+}
