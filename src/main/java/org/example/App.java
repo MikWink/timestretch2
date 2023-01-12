@@ -52,17 +52,9 @@ public class App
             Statement stmt = con.createStatement();
             ResultSet res = stmt.executeQuery("SELECT nextval('idCounter')");
             res.next();
-            int counter = (res.getInt(1))+4;
+            int counter = (res.getInt(1))+14;
             stmt.execute("INSERT INTO timestretch.task VALUES ("+ counter + ", '" + titel + "', '"+ beschreibung + "');");
-            res = stmt.executeQuery("select * from timestretch.task");
-            List<Task>tasks = new ArrayList<>();
-            while (res.next()) {
-                tasks.add(new Task(res.getInt(1), res.getString("Titel"), res.getString("Beschreibung")));
-            }
-            res.close();
-            stmt.close();
-            con.close();
-            ctx.render("tasks.html", Map.of("Task", tasks));
+            ctx.redirect("/");
         });
 
         app.get("/newtask", ctx -> {
