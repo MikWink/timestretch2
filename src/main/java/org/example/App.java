@@ -43,6 +43,18 @@ public class App
             ctx.render("taskInfo.html");
         });
 
+        app.post("/createTask", ctx -> {
+            String titel = ctx.formParam("titel");
+            String beschreibung = ctx.formParam("beschreibung");
+            Connection con = DriverManager.getConnection("jdbc:postgresql://pgdb.wannaco.de:4711/","g1", "k&eiQ_duwfyaPl");
+            Statement stmt = con.createStatement();
+            ResultSet res = stmt.executeQuery("SELECT nextval('idCounter')");
+            res.next();
+            int counter = (res.getInt(1))+14;
+            stmt.execute("INSERT INTO timestretch.task VALUES ("+ counter + ", '" + titel + "', '"+ beschreibung + "');");
+            ctx.redirect("/");
+        });
+
         app.get("/newtask", ctx -> {
             ctx.render("newTask.html");
         });

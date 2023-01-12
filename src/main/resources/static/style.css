@@ -16,7 +16,6 @@ h1, h2, h3, table {
 
 label {
     font-family:Arial;
-    padding: 20%;
 }
 
 .header {
@@ -40,7 +39,7 @@ label {
     border-style: none;
     border-radius: 20px;
     background-color: #eeeeee;
-    float: left;
+    float: left;input
 }
 
 #createNewTask img {

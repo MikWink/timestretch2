@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>New Task</title>
-    <link rel="stylesheet" href="static/style.css" th:href="@{style.css}"/>
+    <link rel="stylesheet" href="static/style.css" th:href="@{/style.css}"/>
 </head>
 <body>
 
 <div class="header">
     <a href="tasks.html" th:href="@{/}">
         <button id="backToTasksButton" type="button">
-            <img src="static/arrow-bar-left.svg">
+            <img src="static/arrow-bar-left.svg" th:src="@{/arrow-bar-left.svg}">
         </button>
     </a>
     <h1>Timestretch</h1>
@@ -18,17 +18,17 @@
 
 <div id="newTaskPage">
     <h2>New Task:</h2>
-    <form id="newTaskForm">
+    <form th:action="@{/createTask}" id="newTask" method="post">
         <label id="labelTitle">
             Title
 
-            <input id="inputTitle" type="text" placeholder="Example task">
+            <input name="titel" id="inputTitle" type="text" placeholder="Example task">
         </label>
         <br>
         <label id="labelDescription">
             Description
         </label>
-            <textarea id="inputDescription" placeholder="Lorem ipsum dolor sit amet, consectetur... " rows="10" cols="30"></textarea>
+            <textarea name="beschreibung" type="text" id="inputDescription" placeholder="Lorem ipsum dolor sit amet, consectetur... " rows="10" cols="30"></textarea>
         <br>
         <label id="labelSubmit">
             <input id="inputSubmit" type="submit">

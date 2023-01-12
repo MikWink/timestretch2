@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Task Info</title>
-    <link rel="stylesheet" href="static/style.css" th:href="@{style.css}"/>
+    <link rel="stylesheet" href="static/style.css" th:href="@{/style.css}"/>
 </head>
 <body>
 <main>
     <div class="header">
         <a href="tasks.html" th:href="@{/}">
         <button id="backToTasksButton" type="button">
-            <img src="static/arrow-bar-left.svg">
+            <img src="static/arrow-bar-left.svg" th:src="@{/arrow-bar-left.svg}">
         </button>
         </a>
         <h1>Timestretch</h1>
